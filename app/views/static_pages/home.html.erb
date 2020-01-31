@@ -1,0 +1,13 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <%= image_tag 'logo.svg.png', size: "50x50" %>
+    <h1>Snapfeed</h1>
+    <p class="lead text-muted">Enter a Flickr user ID below to view their public photos.</p>
+    <p>
+      <%= render 'search_form' %>
+    </p>
+  </div>
+</section>
+<% if @photo_feed %>
+  <%= render 'photo_feed' %>
+<% end %>

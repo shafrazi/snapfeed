@@ -1,0 +1,9 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row photo-feed center-box">
+      <% @photo_feed.each do |photo| %>
+        <%= image_tag image_url(photo) %>
+      <% end %>
+    </div>
+  </div>
+</div>
